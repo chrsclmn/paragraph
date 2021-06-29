@@ -181,6 +181,17 @@ class Paragraph {
   }
 
   /**
+   * Sanitizer rules
+   */
+  static get sanitize() {
+    return {
+      text: {
+        br: true,
+      }
+    };
+  }
+
+  /**
    * Returns true to notify the core that read-only mode is supported
    *
    * @return {boolean}
